@@ -1,6 +1,6 @@
 import React from 'react';
 import phoneImg from 'assets/phone.jpg';
-import cartImg from 'assets/cart.jpg';
+import Header from 'components//Header';
 const Home = (props: any) => {
   console.error('props received by home.js__________', props);
 
@@ -26,38 +26,6 @@ const Home = (props: any) => {
 
   return (
     <React.Fragment>
-      <header>
-        <nav style={{ display: 'flex', justifyContent: 'flex-end' }}>
-          <li
-            style={{
-              position: 'relative',
-              listStyle: 'none',
-              padding: '1rem',
-              cursor: 'pointer',
-            }}
-          >
-            <span
-              style={{
-                background: 'red',
-                padding: '1rem',
-                borderRadius: '50%',
-                top: '0',
-                display: 'flex',
-                alignItems: 'center',
-                right: '0',
-                color: 'white',
-                position: 'absolute',
-                fontSize: '1.4rem',
-                height: '0.5rem',
-              }}
-            >
-              {props.reduxData.cartItems.length}
-            </span>
-
-            <img style={{ height: '5rem' }} src={cartImg} alt="" />
-          </li>
-        </nav>
-      </header>
       <div style={cardStyle}>
         <strong>
           <b>
