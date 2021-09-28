@@ -9,7 +9,8 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import rootReducer from 'service/reducers/index';
 const store = createStore(rootReducer);
-console.log('store from index.js ____________ ', store);
+console.warn('⛪store from index.js ____________ ');
+console.warn(store);
 
 ReactDOM.render(
   <Provider store={store}>

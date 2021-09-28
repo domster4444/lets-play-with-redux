@@ -1,8 +1,8 @@
 import React from 'react';
 import phoneImg from 'assets/phone.jpg';
-import Header from 'components//Header';
 const Home = (props: any) => {
-  console.error('props received by home.js__________', props);
+  console.error('🏠 props received by home.js__________');
+  console.error(props);
 
   const characterImg: Object = {
     height: '10rem',
@@ -43,6 +43,14 @@ const Home = (props: any) => {
           style={cartBtnStyle}
         >
           Add to cart
+        </button>
+        <button
+          onClick={() => {
+            props.removeToCartHandler({ price: 1000, name: 'iphone' });
+          }}
+          style={cartBtnStyle}
+        >
+          Remove from cart
         </button>
       </div>
     </React.Fragment>
